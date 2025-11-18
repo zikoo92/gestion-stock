@@ -1,3 +1,6 @@
+@extends('layout.template')
+
+@section('content')
 <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.3/dist/tailwind.min.css" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <div class="container mx-auto px-4 py-6">
@@ -101,3 +104,4 @@
     </div>
 
 </div>
+@endsection

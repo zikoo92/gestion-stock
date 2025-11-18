@@ -4,9 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Models\User;
 use App\Http\controllers\ProductController;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [ProductController::class, 'index']);
+
 
 Route::resource('/produits',ProductController::class);
 Route::post('/produits/{produit}/quantite', [ProductController::class, 'updateQuantity'])->name('produits.updateQuantity');

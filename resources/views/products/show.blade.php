@@ -1,3 +1,6 @@
+@extends('layout.template')
+
+@section('content')
 <div class="container">
     <h1>Détails du produit</h1>
 
@@ -32,3 +35,4 @@
 
     </div>
 </div>
+@endsection
